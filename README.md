@@ -1,4 +1,4 @@
-# 3.2_Touchsy_ESP-32_Capacitive
+# 3.2_Touchsy_ESP-32_Capacitive_Software
 
 
 
