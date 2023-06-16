@@ -179,9 +179,9 @@ Here are the features and specifications that make Touchsy ESP-32 a unique and m
    Now you are ready to try out your own codes, **_Happy Coding!_**
    
 ## Resources
-  * [Schematic](https://github.com/sbcshop/3.2_Touchsy_Pico_W_Resistive_Hardware/blob/main/Design%20Data/SCH%203.2%20Touchsy%20%20Pico%20w%20(Resistive).pdf)
-  * [Hardware Files](https://github.com/sbcshop/3.2_Touchsy_Pico_W_Resistive_Hardware/tree/main)
-  * [Step File](https://github.com/sbcshop/3.2_Touchsy_Pico_W_Resistive_Hardware/blob/main/Mechanical%20Data/STEP%20%203.2%20inch%20Touchsy%20based%20on%20PICO%20W%20(Resistive).step)
+  * [Schematic](https://github.com/sbcshop/3.2_Touchsy_ESP-32_Capacitive_Hardware/blob/main/Design%20Data/Sch%203.2%20Inch%20Touchsy%20based%20on%20ESp32(capacitive).pdf)
+  * [Hardware Files](https://github.com/sbcshop/3.2_Touchsy_ESP-32_Capacitive_Hardware)
+  * [Step File](https://github.com/sbcshop/3.2_Touchsy_ESP-32_Capacitive_Hardware/blob/main/Mechanical%20Data/Step%203.2%20Inch%20Touchsy%20based%20on%20ESp32(capacitive).step)
   * [MicroPython getting started for RPi Pico/Pico W](https://docs.micropython.org/en/latest/rp2/quickref.html)
   * [Pico W Getting Started](https://projects.raspberrypi.org/en/projects/get-started-pico-w)
   * [RP2040 Datasheet](https://github.com/sbcshop/HackyPi-Hardware/blob/main/Documents/rp2040-datasheet.pdf)
