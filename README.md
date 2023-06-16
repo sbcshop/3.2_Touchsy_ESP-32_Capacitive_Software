@@ -10,7 +10,7 @@ Here are the features and specifications that make Touchsy ESP-32 a unique and m
 
 ### Features:
 - Integrated ESP32-S3 WROOM 1 module, supports 2.4 GHz Wi-Fi and Bluetooth 5 (LE)
-- 3.2” Display Available in two variants: Resistive and Capacitive touchscreen
+- 3.2” TFT Capacitive Touch Display for visual interaction
 - SD card slot for storage and data transfer
 - Battery port connector with Battery Management for portable use (3.7V Lithium)
 - Remaining GPIO pins breakout for connecting more hardware, Serial and direct USB 
@@ -28,7 +28,7 @@ Here are the features and specifications that make Touchsy ESP-32 a unique and m
 - Operating voltage of pins 3.3V and board supply 5V
 - 3.2” Display with resolution 240 × 320
 - ILI934 Display Driver
-- XPT2046 resistive touch controller
+- FT6236 capacitive touch controller
 - Appearance: RGB
 - Colors: 65K/262K
 - Viewing Angle(in degree): Left:70, Right:70, Up:50, Down:70 
