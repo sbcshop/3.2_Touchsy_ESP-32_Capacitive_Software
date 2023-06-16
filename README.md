@@ -182,9 +182,9 @@ Here are the features and specifications that make Touchsy ESP-32 a unique and m
   * [Schematic](https://github.com/sbcshop/3.2_Touchsy_ESP-32_Capacitive_Hardware/blob/main/Design%20Data/Sch%203.2%20Inch%20Touchsy%20based%20on%20ESp32(capacitive).pdf)
   * [Hardware Files](https://github.com/sbcshop/3.2_Touchsy_ESP-32_Capacitive_Hardware)
   * [Step File](https://github.com/sbcshop/3.2_Touchsy_ESP-32_Capacitive_Hardware/blob/main/Mechanical%20Data/Step%203.2%20Inch%20Touchsy%20based%20on%20ESp32(capacitive).step)
-  * [MicroPython getting started for RPi Pico/Pico W](https://docs.micropython.org/en/latest/rp2/quickref.html)
-  * [Pico W Getting Started](https://projects.raspberrypi.org/en/projects/get-started-pico-w)
-  * [RP2040 Datasheet](https://github.com/sbcshop/HackyPi-Hardware/blob/main/Documents/rp2040-datasheet.pdf)
+  * [Getting Started with ESP32 in Arduino](https://docs.espressif.com/projects/arduino-esp32/en/latest/)
+  * [ESP32 S3 Hardware Reference](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/hw-reference/index.html)
+  * [ESP32 S3 Datasheet](https://github.com/sbcshop/3.2_Touchsy_ESP-32_Capacitive_Software/blob/main/documents/esp32-s3_datasheet_en.pdf)
 
 
 ## Related Products
