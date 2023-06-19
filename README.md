@@ -55,49 +55,36 @@ Here are the features and specifications that make Touchsy ESP-32 a unique and m
 
 ### Interfacing Details
 - Display and Capacitive Touch controller interfacing with ESP32
+
+    For Display SPI interfacing done with ESP32
     | ESP32 | Display | Code variables | Function |
     |---|---|---|---|
-    | IO14 | DC/SCL SPI  | _sclk   |Clock pin of SPI interface for Display|
-    | IO13 | SDI SPI/SDA | _mosi   | MOSI (Master OUT Slave IN) pin of SPI interface|
-    | IO12 | SDI SPI/SDA | _miso   | MISO (Master IN Slave OUT) data pin of SPI interface|
-    | IO15 | CS/SPI CS   | TFT_CS  | Chip Select pin of SPI interface|
+    | IO12 | DC/SCL SPI  | TFT_SCLK   |Clock pin of SPI interface for Display|
+    | IO11 | SDI SPI/SDA | TFT_MOSI   | MOSI (Master OUT Slave IN) pin of SPI interface|
+    | IO10 | CS/SPI CS   | TFT_CS  | Chip Select pin of SPI interface|
     | IO21 | WR/SPI D/C  | TFT_DC  | Data/Command pin of SPI interface|
     | EN   | RESET       | TFT_RST | Display Reset pin, Directly connected to enable pin|
-    | IO5  |Driven via Transistor  | TFT_BACKLIGHT_PIN |Backlight of display|
-
-    | ESP32 | Resistive Touch | Code variables | Function |
-    |---|---|---|---|
-    | IO14 | DCLK   | _sclk         |Clock pin of SPI interface for touch controller|
-    | IO13 | DIN    | _mosi         | MOSI (Master OUT Slave IN) data pin of SPI interface|
-    | IO12 | DOUT   | _miso         | MISO (Master IN Slave OUT) data pin of SPI interface|
-    | IO47 | CS     | TOUCH_CS_PIN  | Chip Select pin of SPI interface|
-    | IO0  | PENIRQ | TOUCH_IRQ_PIN | Touch controller Interrupt pin|
+    | IO5  |Driven via Transistor  | BACK_LIGHT |Backlight of display|
 
   Display setting code snippets view:
   ```
-    //Define common SPI interfacing pins
-    #define _sclk              14
-    #define _mosi              13 
-    #define _miso              12
-    
-    //for Display with ESP32
-    #define TFT_DC             21
-    #define TFT_CS             15 
-    #define TFT_RST            -1   // connected to enable pin of esp32 
-    
-    //for Touch controller with ESP32
-    #define TOUCH_CS_PIN       47
-    #define TOUCH_IRQ_PIN      0
-    
-    #define TFT_BACKLIGHT_PIN   5
-
-    // to access various display methods
-    Adafruit_ILI9341 tft = Adafruit_ILI9341( TFT_CS, TFT_DC, TFT_RST );
-
-    // to access resistive touch related method
-    XPT2046_Touchscreen touch( TOUCH_CS_PIN, TOUCH_IRQ_PIN );
+    //Define display SPI interfacing pins inside C:\Users\..\Documents\Arduino\libraries\TFT_eSPI\User_Setup.h
+    #define TFT_MOSI 11
+    #define TFT_SCLK 12
+    #define TFT_CS   10  // Chip select control pin
+    #define TFT_DC   13  // Data Command control pin
+    #define TFT_RST  -1  // Set TFT_RST to -1 if display RESET is connected to ESP32 board RST
   ```
-
+    For capacitive Touch I2C interfacing done
+    | ESP32 | Capacitive Touch | Code variables | Function |
+    |---|---|---|---|
+    | IO38 | SDA | I2C_SDA  |serial data pin of I2C interfacing|
+    | IO39 | SCL | I2C_SCL  |serial clock pin of I2C interfacing|
+  ```
+    //define I2C interface of Touch controller with ESP32, inside main code file
+    #define I2C_SDA 38
+    #define I2C_SCL 39
+  ```
 - ESP32 and micro SD card interfacing
     | ESP32| microSD Card | Function |
     |---|---|---|
@@ -120,6 +107,7 @@ Here are the features and specifications that make Touchsy ESP-32 a unique and m
     |---|---|---|
     |IO4 | BT1 |Programmable button|
     |IO6 | BT2 |Programmable button|
+    |IO0 | Boot | Boot Button|
   
     | ESP32 | Hardware |
     |---|---|
@@ -128,10 +116,11 @@ Here are the features and specifications that make Touchsy ESP-32 a unique and m
 
   Code snippets:
   ``` 
-    const int buzzerPin = 40; //create variable for buzzer pin connected at GPIO40
+    const int buzzerPin = 40; // create variable for buzzer at GPIO40
     const int userButton1 = 4; //for programmable button 1 at GPIO4
     const int userButton2 = 6; //for programmable button 1 at GPIO6
-    const int LED = 15;
+    const int bootButton = 0; // boot button
+    const int LED = 3;
   ```
 - Breakout GPIOs
   
