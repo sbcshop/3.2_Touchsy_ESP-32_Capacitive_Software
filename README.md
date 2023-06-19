@@ -35,11 +35,11 @@ Here are the features and specifications that make Touchsy ESP-32 a unique and m
 - Operating Temperature is -20℃~70℃
 - Storage Temperature is -30℃~80℃
 
-## Getting Started with 3.2 Touchsy ESP-32 Resistive
+## Getting Started with 3.2 Touchsy ESP-32 Capacitive
 ### Pinout
-<img src="https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/images/Touchsy%20ESP32%20Res%20pinout.jpg">
+<img src="https://github.com/sbcshop/3.2_Touchsy_ESP-32_Capacitive_Software/blob/main/images/Touchsy%20ESP32%20cap%20pinout.jpg">
 
-- (1) 3.2” Resistive Touch Display 
+- (1) 3.2” Capacitive Touch Display 
 - (2) Extra GPIO breakout
 - (3) Buzzer 
 - (4) Battery connection port
@@ -54,7 +54,7 @@ Here are the features and specifications that make Touchsy ESP-32 a unique and m
 
 
 ### Interfacing Details
-- Display and Resistive Touch controller interfacing with ESP32
+- Display and Capacitive Touch controller interfacing with ESP32
     | ESP32 | Display | Code variables | Function |
     |---|---|---|---|
     | IO14 | DC/SCL SPI  | _sclk   |Clock pin of SPI interface for Display|
@@ -124,14 +124,14 @@ Here are the features and specifications that make Touchsy ESP-32 a unique and m
     | ESP32 | Hardware |
     |---|---|
     |IO40 | Buzzer |
-    |IO3 | LED |
+    |IO15 | LED |
 
   Code snippets:
   ``` 
     const int buzzerPin = 40; //create variable for buzzer pin connected at GPIO40
     const int userButton1 = 4; //for programmable button 1 at GPIO4
     const int userButton2 = 6; //for programmable button 1 at GPIO6
-    const int LED = 3;
+    const int LED = 15;
   ```
 - Breakout GPIOs
   
@@ -141,7 +141,7 @@ Here are the features and specifications that make Touchsy ESP-32 a unique and m
     |D- | 13 | RTC_GPIO19, GPIO19, U1RTS, ADC2_CH8, CLK_OUT2, USB_D- |
     |D+ | 14 | RTC_GPIO20, GPIO20, U1CTS, ADC2_CH9, CLK_OUT1, USB_D+ |
     |GP9 | 4 | RTC_GPIO9, GPIO9, TOUCH9, ADC1_CH8, FSPIHD |
-    |GP3 |  | RTC_GPIO3, GPIO3, TOUCH3, ADC1_CH2 |
+    |GP3 | 15 | RTC_GPIO3, GPIO3, TOUCH3, ADC1_CH2 |
     |GP46 | 16 | GPIO46 |
     |GP21 | 18 | RTC_GPIO21, GPIO21 |
 
