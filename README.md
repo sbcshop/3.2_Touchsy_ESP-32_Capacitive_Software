@@ -145,19 +145,10 @@ Here are the features and specifications that make Touchsy ESP-32 a unique and m
     |GND  | 1/40/41 | Ground pin |
 
 ### 1. Configure and Setup Development Environment
-   - Every Touchsy board will be provided with boot firmware already installed, so you can directly go to step 2.
-   - If, in any case, you are required to install firmware for your board, then you can follow the guide [here](https://github.com/sbcshop/EnkPi_7.5_Software/blob/main/Downloads/Pico%20W%20Micropython%20Firmware%20Installation%20Steps.pdf)
+   - 
 
 ### 2. Testing First Code
-   - Download **Thonny IDE** from [Download link](https://thonny.org/) as per your OS and install it.
-   - Once done start **Thonny IDE application**, Connect Touchsy with a laptop/PC using a micro USB cable and the micro USB port on Pico W present on Touchsy.
-   - Select device at the bottom right with a suitable COM port, as shown in the below figure. You might get a different COM port.
-      <img src= "https://github.com/sbcshop/EnkPi_2.9_Software/blob/main/images/img1.jpg" />
-      <img src= "https://github.com/sbcshop/EnkPi_2.9_Software/blob/main/images/img2.jpg" />
-   - Write simple onboard blink Python code or [Download Led blink code](https://github.com/sbcshop/3.2_Touchsy_Pico_W_Resistive_Software/blob/main/examples/onboard_ledBlink.py), then click on the green run button to make your script run on Touchsy. 
-      <img src= "https://github.com/sbcshop/EnkPi_2.9_Software/blob/main/images/img3.jpg" />
-     
-     Now that we've reached this point, you're executing your script through Thonny IDE, so if you unplug Pico, it will stop running. To run your script without using an IDE, simply power up Touchsy and it should run your script, go to step 3. Once you have transferred your code to the Touchsy board, to see your script running, just plug in power either way using micro USB or Type C, both will work.
+   - 
 
 
 ### Example Codes
