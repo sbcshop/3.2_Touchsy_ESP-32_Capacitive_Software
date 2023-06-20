@@ -145,21 +145,41 @@ Here are the features and specifications that make Touchsy ESP-32 a unique and m
     |GND  | 1/40/41 | Ground pin |
 
 ### 1. Configure and Setup Development Environment
-   - 
+   - Download Arduino IDE from [official site](https://www.arduino.cc/en/software) and install into your system. We have use Arduino IDE 1.8.19
+      <img src= "" />
+   - Once installation done will add ESP32 board support into IDE, for this first you need to add below link into preference:
+     https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+     
+     Select File > Preference, and add link as show in below image,
+      <img src= "https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/images/preference_board.gif" />
+      
+   - Now will install ESP32 based boards as shown in below image,
 
-### 2. Testing First Code
-   - 
+     <img src= "https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/images/install_ESP32boards.gif" />
+     
+   - Once done, keeping default settings select the ESP32 Dev Module with suitable com port (may be different in your case) as shown below, 
 
+     <img src="https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/images/select_esp32_with_comport.gif">
+     
+     
+### 2. Installing Libraries
+   - Download [library zip file](https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/libraries.zip) provided here in github.
+   - Extract and copy files inside Document > Arduino > Libraries folder. Make sure to restart Arduino IDE whenever you update or add any libraries.
+
+     <img src= "https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/images/library_files_path.png" />
+     
+### 3. Testing First Code
+   - At this step you are all set to test codes, for easy getting started we have provided various demo [example codes](https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/tree/main/examples) in github which you can download and try. 
+   - Open one example code in Arduino and make sure you have selected correct board with suitable com port, click on upload button to transfer code on ESP32 of Touchsy.
+     <img src="https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/images/upload_process.gif">
+   - Checkout other examples below and build your own custom program codes using those references.
 
 ### Example Codes
-   Save whatever example code file you want to try as main.py in pico w as shown in above [step 3](https://github.com/sbcshop/3.2_Touchsy_Pico_W_Resistive_Software#3-how-to-move-your-script-on-pico-w-of-touchsy), also add related lib files with default name.
-   - [Example 1](https://github.com/sbcshop/3.2_Touchsy_Pico_W_Resistive_Software/blob/main/examples/DisplayDemo.py) : Display demo code
-   - [Example 2](https://github.com/sbcshop/3.2_Touchsy_Pico_W_Resistive_Software/blob/main/examples/TouchDemo.py) : Touch demo code
-   - [Example 3](https://github.com/sbcshop/3.2_Touchsy_Pico_W_Resistive_Software/blob/main/examples/ButtonDemo.py) : Button & Buzzer testing with display code
-   - [Example 4](https://github.com/sbcshop/3.2_Touchsy_Pico_W_Resistive_Software/blob/main/examples/demo_SDcard.py) : How to use sdcard for data write operation
-   - [Example 5](https://github.com/sbcshop/3.2_Touchsy_Pico_W_Resistive_Software/blob/main/examples/colorWheel.py) : Animation colorWheel demo
-   - and [Many more...](https://github.com/sbcshop/3.2_Touchsy_Pico_W_Resistive_Software/tree/main/examples)
-   
+   - [Example 1](https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/examples/displayDemo.ino) : Display demo code
+   - [Example 2](https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/examples/touchDemo.ino) : Touch demo code
+   - [Example 3]() : Button & Buzzer testing with display code
+   - and [Many more...](https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/tree/main/examples)
+
    Now you are ready to try out your own codes, **_Happy Coding!_**
    
 ## Resources
