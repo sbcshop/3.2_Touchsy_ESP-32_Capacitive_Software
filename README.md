@@ -180,7 +180,8 @@ Here are the features and specifications that make Touchsy ESP-32 a unique and m
 ### Example Codes
    - [Example 1](https://github.com/sbcshop/3.2_Touchsy_ESP-32_Capacitive_Software/blob/main/examples/displayDemo.ino) : Display demo code
    - [Example 2](https://github.com/sbcshop/3.2_Touchsy_ESP-32_Capacitive_Software/blob/main/examples/touchDemo.ino) : Touch demo code
-   - [Example 3]() : Button & Buzzer testing with display code
+   - [Example 3](https://github.com/sbcshop/3.2_Touchsy_ESP-32_Capacitive_Software/blob/main/examples/button_buzzer_demo.ino) : Button & Buzzer testing with display code
+   - [Example 4](https://github.com/sbcshop/3.2_Touchsy_ESP-32_Capacitive_Software/blob/main/examples/sdcard_Demo.ino) : Demo with micro SDcard
    - and [Many more...](https://github.com/sbcshop/3.2_Touchsy_ESP-32_Capacitive_Software/tree/main/examples)
 
    Now you are ready to try out your own codes, **_Happy Coding!_**
