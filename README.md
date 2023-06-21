@@ -146,9 +146,8 @@ Here are the features and specifications that make Touchsy ESP-32 a unique and m
 
 ### 1. Configure and Setup Development Environment
    - Download Arduino IDE from [official site](https://www.arduino.cc/en/software) and install into your system. We have use Arduino IDE 1.8.19
-      <img src= "" />
    - Once installation done will add ESP32 board support into IDE, for this first you need to add below link into preference:
-     https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+     ``` https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json ```
      
      Select File > Preference, and add link as show in below image,
       <img src= "https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/images/preference_board.gif" />
@@ -163,7 +162,7 @@ Here are the features and specifications that make Touchsy ESP-32 a unique and m
      
      
 ### 2. Installing Libraries
-   - Download [library zip file](https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/libraries.zip) provided here in github.
+   - Download [library zip file](https://github.com/sbcshop/3.2_Touchsy_ESP-32_Capacitive_Software/blob/main/libraries.zip) provided here in github.
    - Extract and copy files inside Document > Arduino > Libraries folder. Make sure to restart Arduino IDE whenever you update or add any libraries.
 
      <img src= "https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/images/library_files_path.png" />
@@ -172,13 +171,17 @@ Here are the features and specifications that make Touchsy ESP-32 a unique and m
    - At this step you are all set to test codes, for easy getting started we have provided various demo [example codes](https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/tree/main/examples) in github which you can download and try. 
    - Open one example code in Arduino and make sure you have selected correct board with suitable com port, click on upload button to transfer code on ESP32 of Touchsy.
      <img src="https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/images/upload_process.gif">
+   - If you plan to use display related code then follow below image steps to create header file inside main code, for demonstration we have shown how to use custom fonts
+     
+     <img src="https://github.com/sbcshop/3.2_Touchsy_ESP-32_Capacitive_Software/blob/main/images/headerFile_add.gif">
+     
    - Checkout other examples below and build your own custom program codes using those references.
 
 ### Example Codes
-   - [Example 1](https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/examples/displayDemo.ino) : Display demo code
-   - [Example 2](https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/examples/touchDemo.ino) : Touch demo code
+   - [Example 1](https://github.com/sbcshop/3.2_Touchsy_ESP-32_Capacitive_Software/blob/main/examples/displayDemo.ino) : Display demo code
+   - [Example 2](https://github.com/sbcshop/3.2_Touchsy_ESP-32_Capacitive_Software/blob/main/examples/touchDemo.ino) : Touch demo code
    - [Example 3]() : Button & Buzzer testing with display code
-   - and [Many more...](https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/tree/main/examples)
+   - and [Many more...](https://github.com/sbcshop/3.2_Touchsy_ESP-32_Capacitive_Software/tree/main/examples)
 
    Now you are ready to try out your own codes, **_Happy Coding!_**
    
