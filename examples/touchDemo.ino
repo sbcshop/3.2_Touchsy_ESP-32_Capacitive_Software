@@ -1,4 +1,3 @@
-
 #include <TFT_eSPI.h> // include display control library
 #include <SPI.h>
 #include <FT6236.h> //Capacitive touch panel controller IC FT6236 library
@@ -34,11 +33,7 @@ void setup(void) {
   tft.setRotation(3); // set suitable rotation for display
   tft.fillScreen(TFT_BLACK); // background color setting
 
-  tft.setTextSize(2); // increase size of text
-  tft.setTextColor(TFT_WHITE, TFT_BLACK);        // Set colour
-  tft.setFreeFont(FF18); // set Font type
-  tft.drawString("Hello...", 80, 100, GFXFF);
-  delay(500);
+ 
 
   tft.setTextSize(1); // to normal Size of Text
   tft.fillScreen(TFT_BLACK); // background color
@@ -49,19 +44,11 @@ void setup(void) {
   tft.setFreeFont(FF1);
   tft.setTextColor(TFT_GREEN, TFT_BLACK);        
   tft.drawString("* Capacitive *", 80, 60, GFXFF);
-  
-  tft.setTextColor(TFT_WHITE, TFT_BLACK);        
-  tft.setFreeFont(FSBI12);
-  tft.drawString("Thank you for Buying!", 50, 120, GFXFF);
-  
-  tft.setTextColor(TFT_BLUE, TFT_BLACK);       
-  tft.setFreeFont(FSSBO12);
-  tft.drawString("SB Components", 70, 180, GFXFF);
 
-  tft.setTextColor(TFT_YELLOW, TFT_BLACK); // set text color
+  tft.setTextColor(TFT_CYAN, TFT_BLACK); // set text color
   tft.setFreeFont(FF1);
-  tft.drawString("shop.sb-components.co.uk", 30, 220, GFXFF);
-  delay(1000);
+  tft.drawString("Touch Demo...", 30, 200, GFXFF);
+  delay(2000);
 }
 
 void loop() {
