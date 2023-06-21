@@ -18,7 +18,7 @@ void setup(void) {
   tft.setTextColor(TFT_WHITE, TFT_BLACK);        // Set colour
   tft.setFreeFont(FF18); // set Font type
   tft.drawString("Hello...", 80, 100, GFXFF);
-  delay(250);
+  delay(500);
 
   tft.setTextSize(1); // to normal Size of Text
   tft.fillScreen(TFT_BLACK); // background color
