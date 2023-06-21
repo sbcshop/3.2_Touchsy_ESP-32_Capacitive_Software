@@ -137,12 +137,12 @@ Here are the features and specifications that make Touchsy ESP-32 a unique and m
     Breakout 2
     | ESP32 |Physical Pin | Multi-Function |
     |---|---|---|
-    |3V3  | 2 | Positive Supply 3.3V |
+    |3V3  | - | Positive Supply 3.3V |
     |GP43 | 37 | U0TXD, GPIO43, CLK_OUT1 |
     |GP44 | 36 | U0RXD, GPIO44, CLK_OUT2 |
     |GP8  | 12 | RTC_GPIO8, GPIO8, TOUCH8, ADC1_CH7  |
     |GP16 | 9 | RTC_GPIO16, GPIO16, U0CTS, ADC2_CH5, XTAL_32K_N |
-    |GND  | 1/40/41 | Ground pin |
+    |GND  | - | Ground pin |
 
 ### 1. Configure and Setup Development Environment
    - Download Arduino IDE from [official site](https://www.arduino.cc/en/software) and install into your system. We have use Arduino IDE 1.8.19
