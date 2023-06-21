@@ -65,7 +65,7 @@ Here are the features and specifications that make Touchsy ESP-32 a unique and m
     | IO10 | CS/SPI CS   | TFT_CS  | Chip Select pin of SPI interface|
     | IO21 | WR/SPI D/C  | TFT_DC  | Data/Command pin of SPI interface|
     | EN   | RESET       | TFT_RST | Display Reset pin, Directly connected to enable pin|
-    | IO5  |Driven via Transistor  | BACK_LIGHT |Backlight of display|
+    | IO5  |Driven via Transistor  | TFT_BACKLIGHT_PIN |Backlight of display|
 
   Display setting code snippets view:
   ```
@@ -120,7 +120,6 @@ Here are the features and specifications that make Touchsy ESP-32 a unique and m
     const int buzzerPin = 40; // create variable for buzzer at GPIO40
     const int userButton1 = 4; //for programmable button 1 at GPIO4
     const int userButton2 = 6; //for programmable button 1 at GPIO6
-    const int bootButton = 0; // boot button
     const int LED = 3;
   ```
 - Breakout GPIOs
