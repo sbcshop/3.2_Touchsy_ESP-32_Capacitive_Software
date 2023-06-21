@@ -2,7 +2,8 @@
 <img src="https://github.com/sbcshop/3.2_Touchsy_HAT_Resistive_Software/blob/main/images/Touchsy%20banner.jpg">
 
 Touchsy ESP-32 offers the ideal display solution for users who favor ESP-32 over Raspberry Pi Pico W. With ESP-32, you enjoy the flexibility to program your display using the Arduino platform, making it compatible with a wide range of projects and applications, including IoT and robotics. 
-This Github provides getting started guide for ESP32 Resistive Variant of Touchsy Family.
+
+This Github provides getting started guide for **ESP32 Capacitive** Variant of Touchsy Family.
 
 You also have the choice between [**Resistive**](https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/tree/main) and **Capacitive** touchscreens to suit your specific requirements. Additionally, the additional GPIO pins breakout provided for convenience of connecting additional hardware to your display.
 
