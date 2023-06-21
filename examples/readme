@@ -1,1 +1,4 @@
+Example code files are ending with .ino 
+For display related codes Free_Fonts.h must be use with main code
+Pitches.h contains various sound notes which can be used for Buzzer
 
