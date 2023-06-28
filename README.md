@@ -28,7 +28,7 @@ Here are the features and specifications that make Touchsy ESP-32 a unique and m
 - Support Bluetooth 5
 - Operating voltage of pins 3.3V and board supply 5V
 - 3.2” Display with resolution 240 × 320
-- ILI934 Display Driver
+- ILI9341 Display Driver
 - FT6236 capacitive touch controller
 - Appearance: RGB
 - Colors: 65K/262K
