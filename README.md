@@ -146,7 +146,7 @@ Here are the features and specifications that make Touchsy ESP-32 a unique and m
 
 ### 1. Configure and Setup Development Environment
    - Download Arduino IDE from [official site](https://www.arduino.cc/en/software) and install into your system. We have use Arduino IDE 1.8.19
-   - Once installation done will add ESP32 board support into IDE, for this first you need to add below link into preference:
+   - Once installation done will add ESP32 S3 board support into IDE, for this first you need to add below link into preference:
      ``` https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json ```
      
      Select File > Preference, and add link as show in below image,
@@ -156,7 +156,7 @@ Here are the features and specifications that make Touchsy ESP-32 a unique and m
 
      <img src= "https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/images/install_ESP32boards.gif" />
      
-   - Once done, keeping default settings select the ESP32 Dev Module with suitable com port (may be different in your case) as shown below, 
+   - Once done, keeping default settings select the ESP32S3 Dev Module with suitable com port (may be different in your case) as shown below, 
 
      <img src="https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/images/select_esp32_with_comport.gif">
      
