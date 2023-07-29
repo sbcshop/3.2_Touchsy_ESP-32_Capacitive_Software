@@ -1,4 +1,4 @@
-const byte LED = 3; // onboard LED connected at GPIO0 
+const int LED = 15; // onboard LED connected at GPIO15
 
 void setup(void) {
   pinMode(LED, OUTPUT); // Set PIN as OUTPUT
