@@ -120,7 +120,7 @@ Here are the features and specifications that make Touchsy ESP-32 a unique and m
     const int buzzerPin = 40; // create variable for buzzer at GPIO40
     const int userButton1 = 4; //for programmable button 1 at GPIO4
     const int userButton2 = 6; //for programmable button 1 at GPIO6
-    const int LED = 3;
+    const int LED = 15;
   ```
 - Breakout GPIOs
   
